@@ -18,24 +18,24 @@ def generate_balance(topics):
         row["category"] = topic.category
         row["title"]    = topic.title
         row["comment"]  = topic.comment
-        row["salary"]   = topic.salary
+        row["income"]   = topic.income
         row["spending"] = topic.spending
         row["dt"]       = topic.dt
         row["pay_dt"]   = topic.pay_dt
 
-        #total   = total + row["salary"] - row["spending"]
+        #total   = total + row["income"] - row["spending"]
 
         if row["spending"]:
             spending    = int(row["spending"])
         else:
             spending    = 0
 
-        if row["salary"]:
-            salary      = int(row["salary"])
+        if row["income"]:
+            income      = int(row["income"])
         else:
-            salary      = 0
+            income      = 0
 
-        total   = total + salary - spending
+        total   = total + income - spending
         row["total"] = total
 
         balances.append(row)

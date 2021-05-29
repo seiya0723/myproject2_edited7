@@ -55,7 +55,7 @@
             <!--ここに左サイドバーのコンテンツを-->
         </div>
 
-        <div id="l_sidebar_closer" class="l_sidebar_closer"></div>
+        <label class="l_sidebar_closer" for="l_sidebar"></label>
 
     </header>
 
@@ -85,9 +85,8 @@
     </select>
     <input type="text" name="title" placeholder="鑑定科目を入力してください" required>
     <input type="text" name="comment" placeholder="主な用途を入力してください">
-    <input type="number" name="salary" placeholder="収入金額を入力してください" value="0" required>
+    <input type="number" name="income" placeholder="収入金額を入力してください" value="0" required>
     <input type="number" name="spending" placeholder="支出金額を入力してください" value="0" required>
-    <input type="number" name="price" placeholder="残高を入力してください" value="0" required>
     <input id="pay_dt" type="text" name="pay_dt" readonly>
     <input class="btn btn-success" type="submit" value="投稿">
 </form>
